@@ -1,14 +1,15 @@
-<!doctype html>
-<html lang="en">
-<head>
-<title>{{ firstname }}{{ name }}</title>
-</head>
+{% extends  'template.html.twig' %}
 
-<body>
-<div>
+
+{% block title %}
+  {{ firstname }}{{ name }}
+{% endblock %}
+
+{% block body %}
+
 <h1>With love from {{ firstname }} {{ name }}</h1>
 <p>Bonjour Techwall Sf6</p>
-</div>
-</body>
+Mon url absolue est :{{ url('first') }}
 
-</html>
+
+{% endblock %}
